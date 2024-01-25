@@ -1,6 +1,6 @@
 /* eslint-disable no-use-before-define */
 /* eslint-disable react/style-prop-object */
-import React from "react";
+import React, { useEffect } from "react";
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import { registerRootComponent } from "expo";
@@ -19,13 +19,21 @@ import { Icon } from "@rneui/themed";
 import TallyScreen from "./screens/TallyScreen";
 import SettingsScreen from "./screens/SettingsScreen";
 import Colors from "./constants/Color";
+import PushNotification, {
+  pushNotificationService,
+} from "./notification/PushNotification";
 
 export default function App() {
+  useEffect(() => {
+    // pushNotificationService.configure();
+  }, []);
+
   const Tab = createBottomTabNavigator();
 
   return (
     <NavigationContainer>
       <SafeAreaProvider>
+        <PushNotification />
         <Tab.Navigator
           // initialRouteName="Settings"
           barStyle={{

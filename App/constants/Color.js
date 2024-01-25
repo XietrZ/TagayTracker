@@ -5,6 +5,7 @@ const Colors = {
   gray_2: "#B4ACAC",
   gray_3: "#EEECEC",
   orange: "#FA9A0B",
+  footer: "#858080",
 };
 
 export default Colors;
