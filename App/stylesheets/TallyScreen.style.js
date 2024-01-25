@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
     // backgroundColor: "blue",
     color: Colors.countdownText,
     fontSize: 200,
-    fontWeight: 600,
+    fontWeight: "bold",
   },
 
   bottomLabelWrapper: {

@@ -48,8 +48,25 @@ const styles = StyleSheet.create({
     color: Colors.gray_2,
   },
 
+  inputFieldWrapper: {
+    borderWidth: 4,
+    borderColor: Colors.gray_2,
+    width: 280,
+    height: 40,
+    justifyContent: "center",
+    marginBottom: 18,
+    marginTop: 20,
+    marginLeft: 28,
+    marginRight: 13,
+  },
+  textInputWrapper: {
+    color: Colors.textInput,
+    fontSize: 15,
+    paddingLeft: 15,
+  },
+
   buttonContainerWrapper: {
-    // backgroundColor: "blue",
+    // backgroundColor: "blue"
     alignItems: "flex-end",
   },
 
@@ -62,6 +79,18 @@ const styles = StyleSheet.create({
     marginBottom: 7,
     justifyContent: "center",
     alignItems: "center",
+  },
+
+  footerPanelWrapper: {
+    position: "absolute",
+    alignItems: "center",
+    bottom: 0,
+    marginBottom: 24,
+  },
+
+  footerTextWrapper: {
+    color: Colors.footer,
+    fontSize: 12,
   },
 });
 

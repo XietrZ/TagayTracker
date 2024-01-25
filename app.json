@@ -21,10 +21,22 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.xietrz.TagayTracker"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9d9a1856-eb96-41ea-aeb9-9ad1136ea8d2"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/9d9a1856-eb96-41ea-aeb9-9ad1136ea8d2"
     }
   }
 }
