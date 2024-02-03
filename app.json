@@ -11,9 +11,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
@@ -22,7 +20,10 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.xietrz.TagayTracker"
+      "package": "com.xietrz.TagayTracker",
+      "useNextNotificationsApi": true,
+      "enableBackgroundNotification": true,
+      "priority": "max"
     },
     "web": {
       "favicon": "./assets/favicon.png"
