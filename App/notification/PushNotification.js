@@ -19,7 +19,10 @@ export default function PushNotification() {
 
   useEffect(() => {
     registerForPushNotificationsAsync().then((token) => {
-      console.log("[PushNotification.js] token: ", token);
+      console.log(
+        "[PushNotification.js] registerForPushNotificationsAsync token: ",
+        token
+      );
       setExpoPushToken(token);
     });
 
@@ -101,8 +104,8 @@ export async function schedulePushNotification({ tallyCount, limitValue }) {
   console.log("\n[PushNotification.js] schedulePushNotification(){ ");
   const bodyMsg =
     "CURRENT TALLY: " + (tallyCount + 1) + "       Limit: " + limitValue;
-  const timeIntervalOfNotif = 300;
-  // const timeIntervalOfNotif = 5;
+  const timeIntervalOfNotif = 300; // 300 seconds // 5 mins
+  // const timeIntervalOfNotif = 5; // 5 seconds
   const id = await Notifications.scheduleNotificationAsync({
     content: {
       title: "Oi Ayaw Kalimot ug Tally",

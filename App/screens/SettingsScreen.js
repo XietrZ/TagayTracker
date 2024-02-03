@@ -14,9 +14,10 @@ import {
   saveLimitValueToUserDevice,
   getLimitValueFromUserDevice,
 } from "../database/AsyncStorageDB";
+import Static from "../constants/Static";
 
 const SettingsScreen = () => {
-  const [limitValue, setLimitValue] = useState(1);
+  const [limitValue, setLimitValue] = useState(4);
   const [limitValueII, setLimitValueII] = useState("");
   const [iseEditBtnPress, setEditBtnPress] = useState(false);
 
@@ -117,7 +118,7 @@ const SettingsScreen = () => {
         {/* Footer with Developer and Version details */}
         <View style={styles.footerPanelWrapper}>
           <Text style={styles.footerTextWrapper}>Developed by: XietrZ</Text>
-          <Text style={styles.footerTextWrapper}>v1.0.0</Text>
+          <Text style={styles.footerTextWrapper}>{Static.version}</Text>
         </View>
       </View>
     </SafeAreaView>
