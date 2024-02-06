@@ -117,7 +117,9 @@ const SettingsScreen = () => {
 
         {/* Footer with Developer and Version details */}
         <View style={styles.footerPanelWrapper}>
-          <Text style={styles.footerTextWrapper}>Developed by: XietrZ</Text>
+          <Text style={styles.footerTextWrapper}>
+            Developed by: {Static.developerName}
+          </Text>
           <Text style={styles.footerTextWrapper}>{Static.version}</Text>
         </View>
       </View>
