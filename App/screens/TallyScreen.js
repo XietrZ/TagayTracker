@@ -176,7 +176,7 @@ const TallyScreen = () => {
             <Icon
               name="refresh"
               type="font-awesome"
-              size={30}
+              size={55}
               color={Colors.orange}
             />
           </TouchableOpacity>

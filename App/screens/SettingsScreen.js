@@ -71,9 +71,11 @@ const SettingsScreen = () => {
             <View style={styles.inputFieldWrapper}>
               <TextInput
                 style={styles.textInputWrapper}
-                placeholder="Edit Limit Value"
+                // placeholder="Edit Limit Value"
+                placeholderTextColor="#757575"
                 value={limitValueII}
                 onChangeText={setLimitValueII}
+                keyboardType="numeric"
               ></TextInput>
             </View>
           )}
@@ -85,7 +87,7 @@ const SettingsScreen = () => {
                 style={styles.buttonWrapper}
                 onPress={onPressEditLimitValue}
               >
-                <Text style={{ fontWeight: "bold", fontSize: 18 }}>Edit</Text>
+                <Text style={styles.buttonTextWrapper}>Edit</Text>
               </TouchableOpacity>
             )}
             <View style={{ flexDirection: "row" }}>
@@ -95,7 +97,7 @@ const SettingsScreen = () => {
                   style={styles.buttonWrapper}
                   onPress={onPressSaveLimitValue}
                 >
-                  <Text style={{ fontWeight: "bold", fontSize: 18 }}>Save</Text>
+                  <Text style={styles.buttonTextWrapper}>Save</Text>
                 </TouchableOpacity>
               )}
               {/* Cancel Button */}
@@ -106,9 +108,7 @@ const SettingsScreen = () => {
                     setEditBtnPress(false);
                   }}
                 >
-                  <Text style={{ fontWeight: "bold", fontSize: 18 }}>
-                    Cancel
-                  </Text>
+                  <Text style={styles.buttonTextWrapper}>Cancel</Text>
                 </TouchableOpacity>
               )}
             </View>

@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     borderWidth: 4,
     borderColor: Colors.gray_2,
     width: 280,
-    height: 40,
+    height: 60,
     justifyContent: "center",
     marginBottom: 18,
     marginTop: 20,
@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
   },
   textInputWrapper: {
     color: Colors.textInput,
-    fontSize: 15,
+    fontSize: 30,
     paddingLeft: 15,
   },
 
@@ -74,11 +74,17 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     backgroundColor: Colors.orange,
     width: 110,
-    height: 43,
+    height: 48,
     marginRight: 12,
     marginBottom: 7,
     justifyContent: "center",
     alignItems: "center",
+  },
+
+  buttonTextWrapper: {
+    fontWeight: "bold",
+    fontSize: 18,
+    color: Colors.buttonText,
   },
 
   footerPanelWrapper: {

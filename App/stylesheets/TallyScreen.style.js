@@ -75,11 +75,11 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.orange,
   },
   lowerScreenlowerWrapper: {
-    flex: 1,
-    // backgroundColor: "blue",
+    // flex: 1,
+    // backgroundColor: "red",
     justifyContent: "center",
     alignItems: "flex-end",
-    paddingRight: 14,
+    paddingRight: 30,
     paddingBottom: 10,
   },
 
